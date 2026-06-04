@@ -5,7 +5,7 @@ from flask import jsonify
 from twilio.twiml.voice_response import VoiceResponse, Gather
 from config import TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN , SERVER_URL
 from twilio.rest import Client
-from modules.chatbot import get_chatbot_response_agent,get_chatbot_response
+from modules.chatbot import get_chatbot_response
 from modules.tts import synthesize_speech
 import os
 from datetime import datetime
