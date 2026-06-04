@@ -1,22 +1,15 @@
 from openai import OpenAI
 from config import OPENAI_API_KEY
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.vectorstores.faiss import FAISS
+from langchain_openai import OpenAIEmbeddings, ChatOpenAI
+from langchain_community.vectorstores import FAISS
 from langchain.agents import OpenAIFunctionsAgent, AgentExecutor
-from langchain.agents.openai_functions_agent.agent_token_buffer_memory import (AgentTokenBufferMemory, )
-from langchain.chat_models import ChatOpenAI
-from langchain.schema import SystemMessage, AIMessage, HumanMessage
-from langchain.prompts import MessagesPlaceholder
-from langchain.agents import AgentExecutor
+from langchain_core.messages import SystemMessage, AIMessage, HumanMessage
+from langchain_core.prompts import MessagesPlaceholder
 from langchain.tools import StructuredTool
-from langchain.llms import OpenAI
 from .agent_tools import (booking, get_history, set_history)
-from config import OPENAI_API_KEY
 from langchain.prompts.prompt import PromptTemplate
 from langchain.chains import ConversationChain
-# from langchain.llms import OpenAI
 from langchain.memory import ConversationBufferMemory
-from openai import OpenAI
 
 
 client = OpenAI(
