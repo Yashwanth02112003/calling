@@ -1,0 +1,3 @@
+<resources>
+    <style name="Theme.AICallAgent" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>
