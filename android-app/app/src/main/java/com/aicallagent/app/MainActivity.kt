@@ -164,10 +164,10 @@ fun MainScreen(onRequestPermissions: () -> Unit) {
                 )
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(
-                    text = "1. Incoming call detected\n" +
-                            "2. Call is rejected after 1.5s\n" +
+                    text = "1. Incoming call is answered\n" +
+                            "2. Speakerphone enabled\n" +
                             "3. AI agent calls back via Twilio\n" +
-                            "4. AI therapist speaks with caller",
+                            "4. Both calls bridged - AI talks to caller",
                     fontSize = 13.sp,
                     lineHeight = 20.sp
                 )
